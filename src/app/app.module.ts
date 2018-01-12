@@ -6,12 +6,20 @@ import { HttpClientModule } from '@angular/common/http';
 import { routing } from './app.routing';
 
 import { HomedataService } from './homedata.service';
+import { LogindataService } from "./logindata.service";
+import { RegisterdataService } from "./registerdata.service";
+
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './header/header.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
 import { FooterComponent } from './footer/footer.component';
+import { ContactusComponent } from './contactus/contactus.component';
+import { DetailproductComponent } from './detailproduct/detailproduct.component';
+import { LoginComponent } from './login/login.component';
+import { UserComponent } from './user/user.component';
+import { RegisterComponent } from './register/register.component';
 
 
 @NgModule({
@@ -20,7 +28,12 @@ import { FooterComponent } from './footer/footer.component';
     HomeComponent,
     HeaderComponent,
     AboutusComponent,
-    FooterComponent
+    FooterComponent,
+    ContactusComponent,
+    DetailproductComponent,
+    LoginComponent,
+    UserComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
@@ -28,7 +41,7 @@ import { FooterComponent } from './footer/footer.component';
     HttpClientModule,
     routing
   ],
-  providers: [HomedataService],
+  providers: [HomedataService,LogindataService,RegisterdataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
