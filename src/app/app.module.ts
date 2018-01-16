@@ -20,6 +20,7 @@ import { DetailproductComponent } from './detailproduct/detailproduct.component'
 import { LoginComponent } from './login/login.component';
 import { UserComponent } from './user/user.component';
 import { RegisterComponent } from './register/register.component';
+import { ComboComponent } from './combo/combo.component';
 
 
 @NgModule({
@@ -33,7 +34,8 @@ import { RegisterComponent } from './register/register.component';
     DetailproductComponent,
     LoginComponent,
     UserComponent,
-    RegisterComponent
+    RegisterComponent,
+    ComboComponent
   ],
   imports: [
     BrowserModule,
