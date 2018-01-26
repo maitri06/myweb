@@ -12,7 +12,7 @@ const router:Routes=[
     {path:'home',component:HomeComponent},
     {path:'aboutus',component:AboutusComponent},
     {path:'contactus',component:ContactusComponent},
-    {path:'detailproduct',component:DetailproductComponent},
+    {path:'detailproduct/:p_id',component:DetailproductComponent},
     {path:'login',component:LoginComponent},
     {path:'register',component:RegisterComponent},
     {path:'combo',component:ComboComponent}

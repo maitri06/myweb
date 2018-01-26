@@ -20,6 +20,11 @@ export class HomeComponent implements OnInit {
       function () { }
     )
   }
+  getId(item)
+  {
+   this._router.navigate(["/detailproduct",item.pk_pro_id]);
+   
+  }
 
 
 }
