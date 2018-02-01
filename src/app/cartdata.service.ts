@@ -13,4 +13,7 @@ export class CartdataService {
   getProductAndCart() {
     return this._http.get(this.url1);
   }
+  deleteCart(id: number) {
+    return this._http.delete(this.url + id, { headers: new HttpHeaders().set('Content-Type', 'application/json') });
+  }
 }

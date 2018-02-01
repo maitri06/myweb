@@ -20,6 +20,14 @@ export class CartComponent implements OnInit {
       function () { }
     )
   }
+  onDeleteCart(item) {
+    this._data.deleteCart(item.pk_cart_id).subscribe(
+      (data: any) => {
+        console.log(data);
+        this.cart.splice(this.cart.indexOf(item), 1);
+      }
+    )
+  }
 
 
 }
