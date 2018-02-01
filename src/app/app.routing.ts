@@ -6,6 +6,7 @@ import { DetailproductComponent } from './detailproduct/detailproduct.component'
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { ComboComponent } from './combo/combo.component';
+import { CartComponent } from './cart/cart.component';
 
 const router:Routes=[
     {path:'',redirectTo:'/home',pathMatch:'full'},
@@ -15,7 +16,8 @@ const router:Routes=[
     {path:'detailproduct/:p_id',component:DetailproductComponent},
     {path:'login',component:LoginComponent},
     {path:'register',component:RegisterComponent},
-    {path:'combo',component:ComboComponent}
+    {path:'combo',component:ComboComponent},
+    {path:'cart',component:CartComponent}
 ];
 
 export const routing=RouterModule.forRoot(router);

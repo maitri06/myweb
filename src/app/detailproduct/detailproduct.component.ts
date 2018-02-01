@@ -26,7 +26,7 @@ desci:string;
         console.log(this.id);
 
         this._data.getProductId(this.id).subscribe(
-          (data:product[])=>{
+          (data:any)=>{
               this.name=data[0].pro_name;
               this.price=data[0].pro_price;
               this.desci=data[0].pro_desci;

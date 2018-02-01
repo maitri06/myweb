@@ -8,6 +8,7 @@ import { routing } from './app.routing';
 import { HomedataService } from './homedata.service';
 import { LogindataService } from "./logindata.service";
 import { RegisterdataService } from "./registerdata.service";
+import { CartdataService } from "./cartdata.service";
 
 
 import { AppComponent } from './app.component';
@@ -21,6 +22,7 @@ import { LoginComponent } from './login/login.component';
 import { UserComponent } from './user/user.component';
 import { RegisterComponent } from './register/register.component';
 import { ComboComponent } from './combo/combo.component';
+import { CartComponent } from './cart/cart.component';
 
 
 @NgModule({
@@ -35,7 +37,8 @@ import { ComboComponent } from './combo/combo.component';
     LoginComponent,
     UserComponent,
     RegisterComponent,
-    ComboComponent
+    ComboComponent,
+    CartComponent
   ],
   imports: [
     BrowserModule,
@@ -43,7 +46,7 @@ import { ComboComponent } from './combo/combo.component';
     HttpClientModule,
     routing
   ],
-  providers: [HomedataService,LogindataService,RegisterdataService],
+  providers: [HomedataService,LogindataService,RegisterdataService,CartdataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

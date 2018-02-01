@@ -1,0 +1,74 @@
+<app-header></app-header>
+<!--banner-->
+<div class="banner-top">
+	<div class="container">
+		<h1>Checkout</h1>
+		<em></em>
+		<h2><a href="index.html">Home</a><label>/</label>Checkout</h2>
+	</div>
+</div>
+<!--login-->
+	<script>$(document).ready(function(c) {
+					$('.close1').on('click', function(c){
+						$('.cart-header').fadeOut('slow', function(c){
+							$('.cart-header').remove();
+						});
+						});	  
+					});
+			   </script>
+<script>$(document).ready(function(c) {
+					$('.close2').on('click', function(c){
+						$('.cart-header1').fadeOut('slow', function(c){
+							$('.cart-header1').remove();
+						});
+						});	  
+					});
+			   </script>
+			   <script>$(document).ready(function(c) {
+					$('.close3').on('click', function(c){
+						$('.cart-header2').fadeOut('slow', function(c){
+							$('.cart-header2').remove();
+						});
+						});	  
+					});
+			   </script>
+<div class="check-out">
+<div class="container">
+	
+	<div class="bs-example4" data-example-id="simple-responsive-table">
+    <div class="table-responsive">
+    	    <table class="table-heading simpleCart_shelfItem">
+		  <tr>
+			<th class="table-grid">Item</th>
+					
+			<th>Prices</th>
+			<th >Delivery </th>
+			<th>Subtotal</th>
+		  </tr>
+		  <tr class="cart-header" *ngFor="let item of cart">
+
+			<td class="ring-in"><a href="single.html" class="at-in">
+        <img src={{item.pro_img1}} class="img-responsive" alt=""></a>
+			<div class="sed">
+				<h5><a href="single.html">{{item.pro_name}}</a></h5>
+				<p>{{item.pro_desci}}</p>
+			
+			</div>
+			<div class="clearfix"> </div>
+			<div class="close1"> </div></td>
+			<td>Rs.{{item.pro_price}}</td>
+			<td>FREE SHIPPING</td>
+			<td class="item_price">$100.00</td>
+			<td class="add-check"><a class="item_add hvr-skew-backward" href="#">Add To Cart</a></td>
+		  </tr>
+		  
+	</table>
+	</div>
+	</div>
+	<div class="produced">
+	<a href="single.html" class="hvr-skew-backward">Produced To Buy</a>
+	 </div>
+</div>
+</div>
+<br>
+<app-footer></app-footer>
