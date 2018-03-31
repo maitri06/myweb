@@ -11,11 +11,14 @@ import { procart } from './procartmodel';
 })
 export class CartComponent implements OnInit {
   public cart: cart[] = [];
+  public name:string;
   constructor(public _data: CartdataService, public _router: Router) { }
 
   ngOnInit() {
     this._data.getProductAndCart().subscribe(
-      (data: any) => { this.cart = data },
+      (data: any) => { this.cart = data ;
+        this.name=localStorage.getItem('product_id');
+      },
       function (e) { alert(e); },
       function () { }
     )

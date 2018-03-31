@@ -1,7 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { IconModule } from 'angular-icon'; 
 
 import { routing } from './app.routing';
 
@@ -24,6 +26,10 @@ import { RegisterComponent } from './register/register.component';
 import { ComboComponent } from './combo/combo.component';
 import { CartComponent } from './cart/cart.component';
 
+import {MatFormFieldModule, MatInputModule,MatButtonModule,
+  MatTableModule,
+MatPaginatorModule
+} from '@angular/material';
 
 @NgModule({
   declarations: [
@@ -42,9 +48,16 @@ import { CartComponent } from './cart/cart.component';
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     FormsModule,
     HttpClientModule,
-    routing
+    routing,
+    MatFormFieldModule, 
+    MatInputModule,
+    MatButtonModule,
+     MatTableModule,
+    MatPaginatorModule,
+    IconModule
   ],
   providers: [HomedataService,LogindataService,RegisterdataService,CartdataService],
   bootstrap: [AppComponent]

@@ -11,9 +11,11 @@ import { product_cat } from "./product_cat_model";
 })
 export class HomeComponent implements OnInit {
   public product: product[] = [];
+  public email:string;
   constructor(public _data: HomedataService, public _router: Router) { }
 
   ngOnInit() {
+    this.email=localStorage.getItem('Email');
     this._data.getProductAndCat().subscribe(
       (data: any) => { this.product = data },
       function (e) { alert(e); },

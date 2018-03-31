@@ -9,22 +9,31 @@
   <div class="login">
     <form>
     <div class="col-md-6 login-do">
+        <div class="login-mail">
+            <input type="text" placeholder="Email" required="" name="email"  [(ngModel)]="email">
+            <i  class="glyphicon glyphicon-envelope"></i>
+          </div>
     <div class="login-mail">
         <input type="text" placeholder="Name" required="" name="name" [(ngModel)]="name">
         <i  class="glyphicon glyphicon-user"></i>
       </div>
       <div class="login-mail">
-        <input type="text" placeholder="Phone Number" required="" name="number" [(ngModel)]="mob">
+          <input type="password" placeholder="gender" required="" name="pw"  [(ngModel)]="password">
+          <i class="glyphicon glyphicon-lock"></i>
+        </div>
+        <div class="login-mail">
+            <input type="file" placeholder="image" required="" name="pw"  [(ngModel)]="password">
+        
+          </div>
+          <div class="login-mail">
+              <input type="text" placeholder="mobile no" required="" name="pw"  [(ngModel)]="password">
+              <i class="glyphicon glyphicon-lock"></i>
+            </div>
+      
+        <input type="textarea" placeholder="address" required="" name="number" [(ngModel)]="mob">
         <i  class="glyphicon glyphicon-phone"></i>
-      </div>
-      <div class="login-mail">
-        <input type="text" placeholder="Email" required="" name="email"  [(ngModel)]="email">
-        <i  class="glyphicon glyphicon-envelope"></i>
-      </div>
-      <div class="login-mail">
-        <input type="password" placeholder="Password" required="" name="pw"  [(ngModel)]="password">
-        <i class="glyphicon glyphicon-lock"></i>
-      </div>
+   
+      
         
       <label class="hvr-skew-backward">
         <input type="submit" value="Submit" (click)="signUp()">
