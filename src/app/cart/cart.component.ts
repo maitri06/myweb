@@ -10,7 +10,8 @@ import { procart } from './procartmodel';
   styleUrls: ['./cart.component.css']
 }) 
 export class CartComponent implements OnInit {
-  public cart: cart[] = [];
+ // public cart: cart[] = [];
+  public cart:procart[]=[];
   public name:string;
   public email:string;
   
@@ -19,18 +20,21 @@ export class CartComponent implements OnInit {
     this.email=localStorage.getItem('Email');
 
      this._data.getCartByEmail(this.email).subscribe(
-     (data:any)=>{ },
+     (data:any)=>{this.cart=data;
+     // this.name=localStorage.getItem('product_id');
+    console.log(data);
+   },
      function (e) { alert(e); },
      function () { }
      )
-     
+    /*
     this._data.getProductAndCart().subscribe(
       (data: any) => { this.cart = data ;
         this.name=localStorage.getItem('product_id');
       },
       function (e) { alert(e); },
       function () { }
-    )
+    ) */
   }
   onDeleteCart(item) {
     this._data.deleteCart(item.pk_cart_id).subscribe(

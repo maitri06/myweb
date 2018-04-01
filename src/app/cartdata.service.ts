@@ -5,13 +5,13 @@ import { cart } from './cart/cartmodel';
 @Injectable()
 export class CartdataService {
   public url: string = "http://localhost:3000/cart/";
-  public url1: string = "http://localhost:3000/procart";
+  public url1: string = "http://localhost:3000/procart/";
   constructor(public _http: HttpClient) { }
   getAllCart() {
     return this._http.get<cart>(this.url);
   }
   getCartByEmail(id:string){
-    return this._http.delete(this.url + id, { headers: new HttpHeaders().set('Content-Type', 'application/json') });
+    return this._http.get(this.url1 + id);
  
   }
   getProductAndCart() {
