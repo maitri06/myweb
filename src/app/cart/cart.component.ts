@@ -12,9 +12,18 @@ import { procart } from './procartmodel';
 export class CartComponent implements OnInit {
   public cart: cart[] = [];
   public name:string;
+  public email:string;
+  
   constructor(public _data: CartdataService, public _router: Router) { }
-
   ngOnInit() {
+    this.email=localStorage.getItem('Email');
+
+     this._data.getCartByEmail(this.email).subscribe(
+     (data:any)=>{ },
+     function (e) { alert(e); },
+     function () { }
+     )
+     
     this._data.getProductAndCart().subscribe(
       (data: any) => { this.cart = data ;
         this.name=localStorage.getItem('product_id');

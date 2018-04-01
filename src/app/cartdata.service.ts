@@ -10,6 +10,10 @@ export class CartdataService {
   getAllCart() {
     return this._http.get<cart>(this.url);
   }
+  getCartByEmail(id:string){
+    return this._http.delete(this.url + id, { headers: new HttpHeaders().set('Content-Type', 'application/json') });
+ 
+  }
   getProductAndCart() {
     return this._http.get(this.url1);
   }
