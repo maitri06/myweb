@@ -16,4 +16,9 @@ export class CartdataService {
   deleteCart(id: number) {
     return this._http.delete(this.url + id, { headers: new HttpHeaders().set('Content-Type', 'application/json') });
   }
+
+  addCart(carts:cart){
+    let body=JSON.stringify(carts);
+    return this._http.post(this.url,body,{headers:new HttpHeaders().set('Content-Type','application/json')});
+  }
 }

@@ -52,7 +52,7 @@ export class LoginComponent implements OnInit {
         
         if(data.length==1)
         {
-         
+          
          /* name1=this.data.name;
           localStorage.setItem('Name',this.data.name1);*/
           localStorage.setItem('Email',this.email_id);
