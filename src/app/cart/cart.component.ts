@@ -27,8 +27,8 @@ export class CartComponent implements OnInit {
      function (e) { alert(e); },
      function () { }
      )
-    /*
-    this._data.getProductAndCart().subscribe(
+    
+   /* this._data.getProductAndCart().subscribe(
       (data: any) => { this.cart = data ;
         this.name=localStorage.getItem('product_id');
       },

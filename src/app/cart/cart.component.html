@@ -48,7 +48,7 @@
 		  <tr class="cart-header" *ngFor="let item of cart">
 
 			<td class="ring-in"><a href="single.html" class="at-in">
-        <img src={{item.pro_img1}} class="img-responsive" alt=""></a>
+        <img src="{{item.pro_img1}}" class="img-responsive" alt=""></a>
 			<div class="sed">
 				<h5><a href="single.html">{{item.pro_name}}</a></h5>
 				<p>{{item.pro_desci}}</p>
@@ -57,7 +57,7 @@
 			<div class="clearfix"> </div>
 			<div class="close1" (click)="onDeleteCart(item)"> </div></td>
 			<td>Rs.{{item.pro_price}}</td>
-			<td>FREE SHIPPING{{name}}</td>
+			<td>FREE SHIPPING</td>
 			<td class="item_price">$100.00</td>
 			<td class="add-check"><a class="item_add hvr-skew-backward" href="#">Add To Cart</a></td>
 		  </tr>

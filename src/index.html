@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <title>Myweb</title>
   <base href="/">
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
  
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -28,6 +28,9 @@
  
   <!--//theme-style-->
   <script src="./assets/js/jquery.min.js"></script>
+  <script src="./assets/js/jstarbox.js" ></script>
+  <script src="./assets/js/jquery.flexslider.js"></script>
+  <script src="./assets/js/imagezoom.js" ></script>
   <!--- start-rate---->
   <script src="./assets/js/jstarbox.js"></script>
     <link rel="stylesheet" href="./assets/css/jstarbox.css" type="text/css" media="screen" charset="utf-8" />
@@ -54,7 +57,15 @@
       </script>
   <!---//End-rate---->
   
-  
+  <script>
+    // Can also be used with $(document).ready()
+    $(window).load(function() {
+      $('.flexslider').flexslider({
+        animation: "slide",
+        controlNav: "thumbnails"
+      });
+    });
+    </script>
   
 </head>
 <body>

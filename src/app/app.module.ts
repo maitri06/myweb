@@ -30,6 +30,7 @@ import {MatFormFieldModule, MatInputModule,MatButtonModule,
   MatTableModule,
 MatPaginatorModule
 } from '@angular/material';
+import { ProdoneComponent } from './prodone/prodone.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +45,8 @@ MatPaginatorModule
     UserComponent,
     RegisterComponent,
     ComboComponent,
-    CartComponent
+    CartComponent,
+    ProdoneComponent
   ],
   imports: [
     BrowserModule,

@@ -32,7 +32,6 @@ email:string;
           (data:any)=>{
            // localStorage.setItem('product_id',this.id);
               this.name=data[0].pro_name;
-              this.email=localStorage.getItem('Email');
               console.log(this.email);
               this.price=data[0].pro_price;
               console.log(this.price);

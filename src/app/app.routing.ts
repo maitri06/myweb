@@ -7,6 +7,7 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { ComboComponent } from './combo/combo.component';
 import { CartComponent } from './cart/cart.component';
+import { ProdoneComponent } from './prodone/prodone.component';
 
 const router:Routes=[
     {path:'',redirectTo:'/home',pathMatch:'full'},
@@ -14,6 +15,7 @@ const router:Routes=[
     {path:'aboutus',component:AboutusComponent},
     {path:'contactus',component:ContactusComponent},
     {path:'detailproduct/:p_id',component:DetailproductComponent},
+    {path:'prodone/:p_name',component:ProdoneComponent},
     {path:'login',component:LoginComponent},
     {path:'register',component:RegisterComponent},
     {path:'combo',component:ComboComponent},

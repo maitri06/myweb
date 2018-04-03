@@ -15,6 +15,9 @@ export class HomedataService {
   getProductAndCat() {
     return this._http.get(this.url1);
   }
+  getProductByCat(id:string){
+    return this._http.get(this.url1 + id);
+  }
   getProductId(id)
   {
     return this._http.get<product>(this.url+id);
