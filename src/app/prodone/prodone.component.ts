@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router, ActivatedRoute } from '@angular/router';
+import { Router, ActivatedRoute, Route } from '@angular/router';
 import { product_cat } from "../home/product_cat_model";
 import { product } from "../home/productmodel";
 
@@ -13,7 +13,7 @@ import {HomedataService  } from "../homedata.service";
 export class ProdoneComponent implements OnInit {
 str:string;
 public product: product[] = [];
-  constructor(private _route:ActivatedRoute,public _data:HomedataService) { }
+  constructor(public _route:ActivatedRoute,public _data:HomedataService,public _router:Router) { }
 
   ngOnInit() {
 
@@ -27,6 +27,11 @@ public product: product[] = [];
         function (e) { alert(e); },
         function () { }
         )
+  }
+  getId(item)
+  {
+   this._router.navigate(["/detailproduct",item.pk_pro_id]);
+   
   }
 
 }

@@ -3,11 +3,11 @@
     <div class="container">
       <h1>Contact Us</h1>
       <em></em>
-      
+
     </div>
   </div>
 <div class="contact">
-					
+
   <div class="contact-form">
     <div class="container">
         <div class="col-md-6 contact-left">
@@ -18,27 +18,23 @@
 
 <div class="col-md-6 contact-top">
   <h3>Have any Queries?</h3>
-  <form>
+  <form (ngSubmit)="onSend()">
     <div>
-      <span>Your Name </span>		
-      <input type="text" value="" >						
+      <span>Your Email </span>
+      <input type="text" [(ngModel)]="email_id" name="email_id">
     </div>
     <div>
-      <span>Your Email </span>		
-      <input type="text" value="" >						
+      <span>Subject</span>
+      <input type="text" [(ngModel)]="subject" name="subject">
     </div>
     <div>
-      <span>Subject</span>		
-      <input type="text" value="" >	
+      <span>Your Message</span>
+      <input type="text" [(ngModel)]="message" name="message">
     </div>
-    <div>
-      <span>Your Message</span>		
-      <textarea> </textarea>	
-    </div>
-    <label class="hvr-skew-backward">
-        <input type="submit" value="Send" >
+    <label >
+        <button  value="Send" class="hvr-skew-backward" >SEND</button>
     </label>
-</form>						
+</form>
 </div>
 </div>
 </div>

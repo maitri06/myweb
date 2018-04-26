@@ -13,6 +13,7 @@ export class LoginComponent implements OnInit {
   email_id:string;
   password:string;
   name1:string="";
+  cnt:number;
   //email = new FormControl('', [Validators.required, Validators.email]);
 
   constructor(public data:LogindataService,public _router:Router) { }
@@ -57,10 +58,14 @@ export class LoginComponent implements OnInit {
           localStorage.setItem('Name',this.data.name1);*/
           localStorage.setItem('Email',this.email_id);
           localStorage.setItem('Name',data[0].u_name);
+          this.cnt=1;
+          localStorage.setItem('Cnt',this.cnt.toString());
           this._router.navigate(['/home']);
         }
         else{
           alert("na thayu");
+          this.cnt=0;
+          localStorage.setItem('Cnt',this.cnt.toString());
         }
       }
     );

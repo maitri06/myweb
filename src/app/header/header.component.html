@@ -3,7 +3,7 @@
     <div class="container">
         <div class="head">
           <div class=" logo">
-            <a routerLink="/home"><img src="./assets/images/wardrobe.png" alt=""></a>	
+            <a routerLink="/home"><img src="./assets/images/wardrobe.png" alt=""></a>
           </div>
         </div>
       </div>
@@ -11,26 +11,24 @@
         <div class="container">
         <div class="col-sm-5 col-md-offset-2  header-login">
               <ul >
-                <li><a routerLink="/login">Login</a></li>
-                <li><a routerLink="/register">Register</a></li>
-                <li><a routerLink="/cart">View Cart</a></li>
-                <li><a href="order.html">My Order</a></li>
+              <li><a routerLink="/cart">View Cart</a></li>
+                <li><a routerLink="/myorder">My Order</a></li>
               </ul>
             </div>
-            
-         
+
+
             <div class="clearfix"> </div>
         </div>
         </div>
-        
+
         <div class="container">
-        
+
           <div class="head-top">
-          
+
          <div class="col-sm-8 col-md-offset-2 h_menu4">
             <nav class="navbar nav_bottom" role="navigation">
-     
-     
+
+
       <div class="navbar-header nav_2">
           <button type="button" class="navbar-toggle collapsed navbar-toggle1" data-toggle="collapse" data-target="#bs-megadropdown-tabs">
             <span class="sr-only">Toggle navigation</span>
@@ -38,147 +36,147 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-         
-       </div> 
-      
+
+       </div>
+
         <div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
             <ul class="nav navbar-nav nav_1 ">
                 <li><a class="color" routerLink="/home">Home</a></li>
-              
+
             <li class="dropdown mega-dropdown active">
-              <a class="color1" href="#" class="dropdown-toggle" data-toggle="dropdown">Men<span class="caret"></span></a>				
+              <a class="color1" href="#" class="dropdown-toggle" data-toggle="dropdown">Men<span class="caret"></span></a>
             <div class="dropdown-menu ">
                         <div class="menu-top">
                 <div class="col1">
                   <div class="h_nav">
                     <h4>Accessories</h4>
                       <ul>
-                        <li><a  [routerLink]="['/prodone','Watches']">Watches</a></li>
-                        <li><a  [routerLink]="['/prodone','Bags']">Bags</a></li>
-                        <li><a [routerLink]="['/prodone','Caps & Hats']">Caps & Hats</a></li>
-                        <li><a [routerLink]="['/prodone','Sunglasses']">Sunglasses</a></li>
-                        
-                      </ul>	
-                  </div>							
+                        <li><a  [routerLink]="['/prodone','Watches_men']">Watches</a></li>
+                        <li><a  [routerLink]="['/prodone','Bags_men']">Bags</a></li>
+                        <li><a [routerLink]="['/prodone','Caps_men']">Caps & Hats</a></li>
+                        <li><a [routerLink]="['/prodone','Sunglasses_men']">Sunglasses</a></li>
+
+                      </ul>
+                  </div>
                 </div>
                 <div class="col1">
                   <div class="h_nav">
                     <h4>Top Wear</h4>
                     <ul>
-                        <li><a [routerLink]="['/prodone','T-Shirts']">T-Shirts</a></li>
-                        <li><a [routerLink]="['/prodone','Casual Shirts']">Casual Shirts</a></li>
-                        <li><a [routerLink]="['/prodone','Formal Shirts']">Formal Shirts</a></li>
-                        <li><a [routerLink]="['/prodone','Hoodies & Sweatshirts']">Hoodies & Sweatshirts</a></li>
-                        <li><a [routerLink]="['/prodone','Jackets & Coats']">Jackets & Coats</a></li>
-                      </ul>	
-                  </div>							
+                        <li><a [routerLink]="['/prodone','T-Shirts_men']">T-Shirts</a></li>
+                        <li><a [routerLink]="['/prodone','Casual Shirts_men']">Casual Shirts</a></li>
+                        <li><a [routerLink]="['/prodone','Formal Shirts_men']">Formal Shirts</a></li>
+                        <li><a [routerLink]="['/prodone','Hoodies_men']">Hoodies & Sweatshirts</a></li>
+                        <li><a [routerLink]="['/prodone','Jackets_men']">Jackets & Coats</a></li>
+                      </ul>
+                  </div>
                 </div>
                 <div class="col1">
                   <div class="h_nav">
                     <h4>Bottom Wear</h4>
                       <ul>
-                        <li><a [routerLink]="['/prodone','Jeans']">Jeans</a></li>
-                        <li><a [routerLink]="['/prodone','Formal Trousers']">Formal Trousers</a></li>
-                        <li><a [routerLink]="['/prodone','Casual Trousers']">Casual Trousers</a></li>
-                        <li><a [routerLink]="['/prodone','Shorts']">Shorts</a></li>
-                       
-                        
-                      </ul>	
-                    
-                  </div>							
+                        <li><a [routerLink]="['/prodone','Jeans_men']">Jeans</a></li>
+                        <li><a [routerLink]="['/prodone','Formal Trousers_men']">Formal Trousers</a></li>
+                        <li><a [routerLink]="['/prodone','Casual Trousers_men']">Casual Trousers</a></li>
+                        <li><a [routerLink]="['/prodone','Shorts_men']">Shorts</a></li>
+
+
+                      </ul>
+
+                  </div>
                 </div>
                 <div class="col1">
                   <div class="h_nav">
                     <h4>Extras</h4>
                     <ul>
-                      <li><a [routerLink]="['/prodone','Sportswear']">Sportswear</a></li>
-                      <li><a [routerLink]="['/prodone','Swimwear']">Swimwear</a></li>
-                      <li><a [routerLink]="['/prodone','Shoes & Socks']">Shoes & Socks</a></li>
-                      <li><a [routerLink]="['/prodone','Wallets']">Wallets</a></li>
-                      <li><a [routerLink]="['/prodone','Ethnic Wear']">Ethnic Wear</a></li>
-                    </ul>	
-                  </div>							
+                      <li><a [routerLink]="['/prodone','Sportswear_men']">Sportswear</a></li>
+                      <li><a [routerLink]="['/prodone','Swimwear_men']">Swimwear</a></li>
+                      <li><a [routerLink]="['/prodone','Shoes_men']">Shoes</a></li>
+                      <li><a [routerLink]="['/prodone','Wallets_men']">Wallets</a></li>
+                      <li><a [routerLink]="['/prodone','Ethnic Wear_men']">Ethnic Wear</a></li>
+                    </ul>
+                  </div>
                 </div>
                 <div class="col1 col5">
                 <img src="./assets/images/me1.png" class="img-responsive" alt="">
                 </div>
                 <div class="clearfix"></div>
-              </div>                  
-            </div>				
+              </div>
+            </div>
           </li>
           <li class="dropdown mega-dropdown active">
-              <a class="color2" href="#" class="dropdown-toggle" data-toggle="dropdown">Women<span class="caret"></span></a>				
+              <a class="color2" href="#" class="dropdown-toggle" data-toggle="dropdown">Women<span class="caret"></span></a>
             <div class="dropdown-menu mega-dropdown-menu">
                         <div class="menu-top">
                 <div class="col1">
                   <div class="h_nav">
                     <h4>Accessories</h4>
                       <ul>
-                          <li><a [routerLink]="['/prodone','Sunglasses']">Sunglasses</a></li>
-                        <li><a [routerLink]="['/prodone','Watches']">Watches</a></li>
-                        <li><a [routerLink]="['/prodone','Bags']">Bags</a></li>
-                        <li><a [routerLink]="['/prodone','Caps & Hats']">Caps & Hats</a></li>
-                        <li><a [routerLink]="['/prodone','Purse & HandBags']">Purse & HandBags</a></li>
-                        
-                      </ul>	
-                  </div>							
+                          <li><a [routerLink]="['/prodone','Sunglasses_women']">Sunglasses</a></li>
+                        <li><a [routerLink]="['/prodone','Watches_women']">Watches</a></li>
+                        <li><a [routerLink]="['/prodone','Bags_women']">Bags</a></li>
+                        <li><a [routerLink]="['/prodone','Caps_women']">Caps & Hats</a></li>
+                        <li><a [routerLink]="['/prodone','Purse_women']">Purse & HandBags</a></li>
+
+                      </ul>
+                  </div>
                 </div>
                 <div class="col1">
                   <div class="h_nav">
                     <h4>Top Wear</h4>
                     <ul>
-                        <li><a [routerLink]="['/prodone','Kurtas']">Kurtas</a></li>
-                        <li><a [routerLink]="['/prodone','T-Shirts']">T-Shirts</a></li>
-                        <li><a [routerLink]="['/prodone','Casual Shirts']">Casual Shirts</a></li>
-                        <li><a [routerLink]="['/prodone','Formal Shirts']">Formal Shirts</a></li>
-                        <li><a [routerLink]="['/prodone','Sarees']">Sarees</a></li>
-                        <li><a [routerLink]="['/prodone','Jackets & Coats']">Jackets & Coats</a></li></ul>	
-                  </div>							
+                        <li><a [routerLink]="['/prodone','Kurtas_women']">Kurtas</a></li>
+                        <li><a [routerLink]="['/prodone','T-Shirts_women']">T-Shirts</a></li>
+                        <li><a [routerLink]="['/prodone','Casual Shirts_women']">Casual Shirts</a></li>
+                        <li><a [routerLink]="['/prodone','Formal Shirts_women']">Formal Shirts</a></li>
+                        <li><a [routerLink]="['/prodone','Sarees_women']">Sarees</a></li>
+                        <li><a [routerLink]="['/prodone','Jackets_women']">Jackets & Coats</a></li></ul>
+                  </div>
                 </div>
                 <div class="col1">
                   <div class="h_nav">
                     <h4>Bottom Wear</h4>
-                    
-               <ul> 
-                  <li><a [routerLink]="['/prodone','Payjamas']">Payjamas</a></li>
-                    <li><a [routerLink]="['/prodone','Jeans']">Jeans</a></li>
-                    <li><a [routerLink]="['/prodone','Formal Trousers']">Formal Trousers</a></li>
-                    <li><a [routerLink]="['/prodone','Casual Trousers']">Casual Trousers</a></li>
-                    <li><a [routerLink]="['/prodone','Shorts']">Shorts</a></li>
-     
-                      </ul>	
-                    
-                  </div>							
+
+               <ul>
+                  <li><a [routerLink]="['/prodone','Payjamas_women']">Payjamas</a></li>
+                    <li><a [routerLink]="['/prodone','Jeans_women']">Jeans</a></li>
+                    <li><a [routerLink]="['/prodone','Formal Trousers_women']">Formal Trousers</a></li>
+                    <li><a [routerLink]="['/prodone','Casual Trousers_women']">Casual Trousers</a></li>
+                    <li><a [routerLink]="['/prodone','Shorts_women']">Shorts</a></li>
+
+                      </ul>
+
+                  </div>
                 </div>
                 <div class="col1">
                   <div class="h_nav">
                         <h4>Extras</h4>
                         <ul>
-                          <li><a [routerLink]="['/prodone','Sportswear']">Sportswear</a></li>
-                          <li><a [routerLink]="['/prodone','Swimwear']">Swimwear</a></li>
-                          <li><a [routerLink]="['/prodone','Shoes & Socks']">Shoes & Socks</a></li>
-                          <li><a [routerLink]="['/prodone','Cosmetics']">Cosmetics</a></li>
-                          <li><a [routerLink]="['/prodone','Ethnic Wear']">Ethnic Wear</a></li>
-                    </ul>	
-                  </div>							
+                          <li><a [routerLink]="['/prodone','Sportswear_women']">Sportswear</a></li>
+                          <li><a [routerLink]="['/prodone','Swimwear_women']">Swimwear</a></li>
+                          <li><a [routerLink]="['/prodone','Shoes_women']">Shoes & Socks</a></li>
+                          <li><a [routerLink]="['/prodone','Cosmetics_women']">Cosmetics</a></li>
+                          <li><a [routerLink]="['/prodone','Ethnic Wear_women']">Ethnic Wear</a></li>
+                    </ul>
+                  </div>
                 </div>
                 <div class="col1 col5">
                 <img src="./assets/images/me.png" class="img-responsive" alt="">
                 </div>
                 <div class="clearfix"></div>
-              </div>                  
-            </div>				
+              </div>
+            </div>
           </li>
-          <!--<li><a class="color3" routerLink="/combo">Combos</a></li>-->
+          <li><a class="color3" routerLink="/combo">Combos</a></li>
                 <li ><a class="color6" routerLink="/contactus">Contact Us</a></li>
                 <li ><a class="color6" routerLink="/aboutus" >About Us</a></li>
-          
+
             </ul>
          </div>
-    
+
     </nav>
           </div>
-        
+
 </div>
 </div>
 </div>

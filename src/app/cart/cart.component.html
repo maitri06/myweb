@@ -13,15 +13,15 @@
 						$('.cart-header').fadeOut('slow', function(c){
 							$('.cart-header').remove();
 						});
-						});	  
+						});
 					});
-			   </script> 
+			   </script>
 <script>$(document).ready(function(c) {
 					$('.close2').on('click', function(c){
 						$('.cart-header1').fadeOut('slow', function(c){
 							$('.cart-header1').remove();
 						});
-						});	  
+						});
 					});
 			   </script>
 			   <script>$(document).ready(function(c) {
@@ -29,20 +29,20 @@
 						$('.cart-header2').fadeOut('slow', function(c){
 							$('.cart-header2').remove();
 						});
-						});	  
+						});
 					});
 			   </script>
 <div class="check-out">
 <div class="container">
-	
+
 	<div class="bs-example4" data-example-id="simple-responsive-table">
     <div class="table-responsive">
     	    <table class="table-heading simpleCart_shelfItem">
 		  <tr>
 			<th class="table-grid">Item</th>
-					
+
 			<th>Prices</th>
-			<th >Delivery </th>
+			<th >Quantity </th>
 			<th>Subtotal</th>
 		  </tr>
 		  <tr class="cart-header" *ngFor="let item of cart">
@@ -50,23 +50,38 @@
 			<td class="ring-in"><a href="single.html" class="at-in">
         <img src="{{item.pro_img1}}" class="img-responsive" alt=""></a>
 			<div class="sed">
-				<h5><a href="single.html">{{item.pro_name}}</a></h5>
+				<h5><a href="">{{item.pro_name}}</a></h5>
 				<p>{{item.pro_desci}}</p>
-			
+
 			</div>
 			<div class="clearfix"> </div>
-			<div class="close1" (click)="onDeleteCart(item)"> </div></td>
+		</td>
 			<td>Rs.{{item.pro_price}}</td>
-			<td>FREE SHIPPING</td>
-			<td class="item_price">$100.00</td>
-			<td class="add-check"><a class="item_add hvr-skew-backward" href="#">Add To Cart</a></td>
+			<td>
+				 {{item.cart_qty}}
+			<!--  <select>
+				  <option value='+d+'>
+					<script language="javascript" type="text/javascript">
+
+					for(var d=1;d<=5;d++)
+					{
+						document.write("<option>"+d+"</option>");
+					}
+					</script>
+					</option>
+					</select>-->
+
+      </td>
+      <td>
+      {{item.cart_amount1}}</td>
+			<td class="add-check"><a class="item_add hvr-skew-backward" (click)="onDeleteCart(item)">Remove</a></td>
 		  </tr>
-		  
+
 	</table>
 	</div>
 	</div>
 	<div class="produced">
-	<a href="single.html" class="hvr-skew-backward">Produced To Buy</a>
+	<a class="hvr-skew-backward" (click)="getId()">CheckOut</a>
 	 </div>
 </div>
 </div>

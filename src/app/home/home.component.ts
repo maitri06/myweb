@@ -17,7 +17,7 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
     this.email=localStorage.getItem('Email');
     this._data.getProductAndCat().subscribe(
-      (data: any) => { this.product = data },
+      (data: any) => { this.product = data; },
       function (e) { alert(e); },
       function () { }
     )
@@ -25,7 +25,7 @@ export class HomeComponent implements OnInit {
   getId(item)
   {
    this._router.navigate(["/detailproduct",item.pk_pro_id]);
-   
+
   }
 
 

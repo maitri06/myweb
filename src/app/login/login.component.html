@@ -8,12 +8,12 @@
 
 <div class="container">
   <div class="login">
-  
+
     <form>
     <div class="col-md-6 login-do">
       <div class="login-mail">
         <input type="text" placeholder="Email" [(ngModel)]="pk_email_id" required="" name="email">
-     
+
         <i  class="glyphicon glyphicon-envelope"></i>
       </div>
       <div class="login-mail">
@@ -26,13 +26,13 @@
     </div>
     <div class="col-md-6 login-right">
        <h3>Completely Free Account</h3>
-       
-       <p>Pellentesque neque leo, dictum sit amet accumsan non, dignissim ac mauris. Mauris rhoncus, lectus tincidunt tempus aliquam, odio 
+
+       <p>Pellentesque neque leo, dictum sit amet accumsan non, dignissim ac mauris. Mauris rhoncus, lectus tincidunt tempus aliquam, odio
        libero tincidunt metus, sed euismod elit enim ut mi. Nulla porttitor et dolor sed condimentum. Praesent porttitor lorem dui, in pulvinar enim rhoncus vitae. Curabitur tincidunt, turpis ac lobortis hendrerit, ex elit vestibulum est, at faucibus erat ligula non neque.</p>
       <a routerLink="/register" class=" hvr-skew-backward">Register</a>
 
     </div>
-    
+
     <div class="clearfix"> </div>
     </form>
   </div>
@@ -43,7 +43,7 @@
 -->
 
 
-<app-header></app-header>
+<app-newheader></app-newheader>
 <div class="banner-top">
 	<div class="container">
 		<h1>Login</h1>
@@ -67,14 +67,14 @@
             [(ngModel)]="email_id"
             name="inpemail"
              type="email"
-            
+
              #inpemail="ngModel">
             <!-- <i  class="glyphicon glyphicon-envelope"></i>-->
-            
+
              <mat-error *ngIf="inpemail.hasError('required')" >Email must Require</mat-error>
              <mat-error *ngIf="!inpemail.hasError('required')" >Wrong Email Address</mat-error>
-        
-        
+
+
           </mat-form-field>
           </div>
           <div class="login-mail">
@@ -87,7 +87,7 @@
             name="inpPass"
             [(ngModel)]="password"
              type="password"
-            
+
              #inpPass="ngModel">
              <!--<i class="glyphicon glyphicon-lock"></i>-->
              <mat-error *ngIf="inpPass.hasError('required')"  >Password must Require!</mat-error>
@@ -95,26 +95,26 @@
           </mat-form-field>
         </div>
     <br>
-       <label class="hvr-skew-backward">
-              <button mat-raised-button color="primary" [disabled]="!addform.form.valid" class="hvr-skew-backward">Login</button>
+       <label class="">
+              <button mat-raised-button color="primary" [disabled]="!addform.form.valid" >Login</button>
        </label>
-            
-    
+
+
  </div>
 
  <div class="col-md-6 login-right">
        <h3>Completely Free Account</h3>
-       
-       <p>Pellentesque neque leo, dictum sit amet accumsan non, dignissim ac mauris. Mauris rhoncus, lectus tincidunt tempus aliquam, odio 
+
+       <p>Pellentesque neque leo, dictum sit amet accumsan non, dignissim ac mauris. Mauris rhoncus, lectus tincidunt tempus aliquam, odio
        libero tincidunt metus, sed euismod elit enim ut mi. Nulla porttitor et dolor sed condimentum. Praesent porttitor lorem dui, in pulvinar enim rhoncus vitae. Curabitur tincidunt, turpis ac lobortis hendrerit, ex elit vestibulum est, at faucibus erat ligula non neque.</p>
       <a routerLink="/register" class=" hvr-skew-backward">Register</a>
 
     </div>
-    
+
     <div class="clearfix"> </div>
-    
-            <a routerLink="/forgot" class="link">Forget password?</a>
+
+            <a routerLink="/forget" class="link">Forget password?</a>
           </form>
           </div>
-       </div>   
+       </div>
           <app-footer></app-footer>
