@@ -17,19 +17,16 @@ export class RegisterComponent implements OnInit {
   email:string="";
 password:string="";
 name:string="";
-gender:string="";
-image:string="";
-mob:string="";
-address:string="";
+mobile:string="";
 public user:user[]=[];
 
 signUp()
   {
-    let item=new user(this.email,this.password,this.name,this.gender,this.image,this.mob,this.address,'user');
+    let item=new user(this.email,this.password,this.name,'','',this.mobile,'','user');
     this._data.addUser(item).subscribe(
       (data:any)=>{
         console.log(data);
-        this._router.navigate(['/home']);
+        this._router.navigate(['/login']);
       }
     )
   }

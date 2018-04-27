@@ -1,0 +1,214 @@
+<app-newheader></app-newheader>
+
+<div class="banner-top">
+	<div class="container">
+		<h1>Combo</h1>
+		<em></em>
+	</div>
+</div>
+<div class="single">
+
+
+    <div class="container">
+        <div class="col-md-9">
+          <div class="col-md-5 grid">
+            <div class="flexslider">
+                <ul class="slides">
+                <li data-thumb>
+                  <div class="thumb-image"> <img src="{{img1}}" data-imagezoom="true" class="img-responsive"> </div>
+                </li>
+                <li data-thumb>
+                   <div class="thumb-image"> <img src="{{img2}}" data-imagezoom="true" class="img-responsive"> </div>
+                </li>
+                <li data-thumb>
+                   <div class="thumb-image"> <img src="{{img3}}" data-imagezoom="true" class="img-responsive"> </div>
+                </li>
+                </ul>
+                <!-- <img src="./assets/images/si.jpg" height="250px" width="250px"  > -->
+            </div>
+          </div>
+        <div class="col-md-7 single-top-in">
+                    <div class="span_2_of_a1 simpleCart_shelfItem">
+                <h3>{{name}}</h3>
+               
+                <div class="price_single">
+                  <span class="reducedfrom item_price">{{price| currency:'INR'}}</span><br>
+                </div>
+                 <!--<div class="quantity">
+                        <div class="quantity-select"> Quantity-select
+                            <select [(ngModel)]="qty" value="Select Category"  name="sel">
+                                <option >1</option>
+                                <option >2</option>
+                                <option >3</option>
+                                <option >4</option>
+                                <option >5</option>
+                                <option >6</option>
+                                <option >7</option>
+                                <option >8</option>
+                                <option >9</option>
+                                <option >10</option>
+
+                                  </select>
+                        </div>
+                      </div>-->
+                      <!--quantity-->
+          <!--<script>
+          $('.value-plus').on('click', function(){
+            var divUpd = $(this).parent().find('.value'), newVal = parseInt(divUpd.text(), 10)+1;
+            divUpd.text(newVal);
+          });
+
+          $('.value-minus').on('click', function(){
+            var divUpd = $(this).parent().find('.value'), newVal = parseInt(divUpd.text(), 10)-1;
+            if(newVal>=1) divUpd.text(newVal);
+          });
+          </script>-->
+          <!--quantity-->
+
+                <a routerLink='/login' class="add-to item_add hvr-skew-backward">Contact Us</a>
+              <div class="clearfix"> </div>
+              </div>
+
+                <!--	</div>-->
+              <div class="clearfix"> </div>
+              <!---->
+              <div class="tab-head">
+               <nav class="nav-sidebar">
+            <ul class="nav tabs">
+              <li class="active">
+              <a href="#tab3" data-toggle="tab">Reviews</a></li>
+            </ul>
+          </nav>
+          <div class="tab-content one">
+        <div class="tab-pane active text-style" id="tab1">
+         <div class="facts">
+                            <p >{{desci}} </p>
+                            <ul>
+                              <li><span class="glyphicon glyphicon-ok" aria-hidden="true"></span>Research</li>
+                              <li><span class="glyphicon glyphicon-ok" aria-hidden="true"></span>Design and Development</li>
+                              <li><span class="glyphicon glyphicon-ok" aria-hidden="true"></span>Porting and Optimization</li>
+                              <li><span class="glyphicon glyphicon-ok" aria-hidden="true"></span>System integration</li>
+                              <li><span class="glyphicon glyphicon-ok" aria-hidden="true"></span>Verification, Validation and Testing</li>
+                              <li><span class="glyphicon glyphicon-ok" aria-hidden="true"></span>Maintenance and Support</li>
+                            </ul>
+                          </div>
+
+        </div>
+
+        <div class="tab-pane text-style" id="tab3">
+
+                           <div class="facts">
+                            <p > There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined </p>
+                            <ul>
+                              <li><span class="glyphicon glyphicon-ok" aria-hidden="true"></span>Research</li>
+                              <li><span class="glyphicon glyphicon-ok" aria-hidden="true"></span>Design and Development</li>
+                              <li><span class="glyphicon glyphicon-ok" aria-hidden="true"></span>Porting and Optimization</li>
+                              <li><span class="glyphicon glyphicon-ok" aria-hidden="true"></span>System integration</li>
+                              <li><span class="glyphicon glyphicon-ok" aria-hidden="true"></span>Verification, Validation and Testing</li>
+                              <li><span class="glyphicon glyphicon-ok" aria-hidden="true"></span>Maintenance and Support</li>
+                            </ul>
+                         </div>
+
+         </div>
+
+          </div>
+          <div class="clearfix"></div>
+          </div>
+          </div>
+              <!---->
+        </div>
+        <!----->
+
+        <div class="col-md-3 product-bottom product-at">
+              <!--categories-->
+                <!--initiate accordion-->
+                    <script type="text/javascript">
+                      $(function() {
+                        var menu_ul = $('.menu-drop > li > ul'),
+                             menu_a  = $('.menu-drop > li > a');
+                        menu_ul.hide();
+                        menu_a.click(function(e) {
+                          e.preventDefault();
+                          if(!$(this).hasClass('active')) {
+                            menu_a.removeClass('active');
+                            menu_ul.filter(':visible').slideUp('normal');
+                            $(this).addClass('active').next().stop(true,true).slideDown('normal');
+                          } else {
+                            $(this).removeClass('active');
+                            $(this).next().stop(true,true).slideUp('normal');
+                          }
+                        });
+
+                      });
+                    </script>
+        <!--//menu-->
+         <!--<section  class="sky-form">
+                  <h4 class="cate">Price Range</h4>
+                   <div class="row row1 scroll-pane">
+ 
+                     <div class="col col-4">
+                      <label class="checkbox"><input type="checkbox" name="checkbox"><i></i><a [routerLink]="['/priceone','priceon']">499 - 999 </a></label>
+                      <label class="checkbox"><input type="checkbox" name="checkbox"><i></i><a [routerLink]="['/priceone','pricetwo']">1000 - 1499</a> </label>
+                      <label class="checkbox"><input type="checkbox" name="checkbox"><i></i><a [routerLink]="['/priceone','pricethree']">1500 - 1999 </a></label>
+                      <label class="checkbox"><input type="checkbox" name="checkbox"><i></i><a [routerLink]="['/priceone','pricefour']">2000 - 2999</a></label>
+                      <label class="checkbox"><input type="checkbox" name="checkbox"><i></i><a [routerLink]="['/priceone','pricefive']">3000 - 5999</a></label>
+
+                     </div>
+                   </div>
+                 </section>
+
+
+                  
+                   <section  class="sky-form">
+                    <h4 class="cate">Accessories</h4>
+                      <div class="row row1 scroll-pane">
+
+                        <div class="col col-4">
+                          <label class="checkbox"><input type="checkbox" name="checkbox"><i></i>  <a  [routerLink]="['/prodone','Watches_men']">Watches</a></label>
+                            <label class="checkbox"><input type="checkbox" name="checkbox"><i></i> <a  [routerLink]="['/prodone','Bags_men']">Bags</a></label>
+                              <label class="checkbox"><input type="checkbox" name="checkbox"><i></i> <a [routerLink]="['/prodone','Caps_men']">Caps & Hats</a></label>
+                                <label class="checkbox"><input type="checkbox" name="checkbox"><i></i>  <a [routerLink]="['/prodone','Sunglasses_men']">Sunglasses</a></label>
+                      </div>
+                      </div>
+                   </section>
+                       <section  class="sky-form">
+                    <h4 class="cate">Brand</h4>
+                      <div class="row row1 scroll-pane">
+
+                        <div class="col col-4">
+                          <label class="checkbox"><input type="checkbox" name="checkbox"><i></i><a [routerLink]="['/probrand','Nike']">Nike</a></label>
+                          <label class="checkbox"><input type="checkbox" name="checkbox"><i></i><a [routerLink]="['/probrand','Puma']">Puma</a></label>
+                          <label class="checkbox"><input type="checkbox" name="checkbox"><i></i><a [routerLink]="['/probrand','Levi`s']">Levi`s</a></label>
+                          <label class="checkbox"><input type="checkbox" name="checkbox"><i></i><a [routerLink]="['/probrand','Tommy Hilfiger']">Tommy Hilfiger</a></label>
+                          <label class="checkbox"><input type="checkbox" name="checkbox" ><i></i><a [routerLink]="['/probrand','Duke']">Duke</a></label>
+                          </div>
+                      </div>
+                   </section>
+            </div>-->
+            <div class="clearfix"> </div>
+          </div>
+				<!--brand-->
+			<!--<div class="container">
+				<div class="brand">
+					<div class="col-md-3 brand-grid">
+						<img src="../../assets/images/ic.png" class="img-responsive" alt="">
+					</div>
+					<div class="col-md-3 brand-grid">
+						<img src="../../assets/images/ic1.png" class="img-responsive" alt="">
+					</div>
+					<div class="col-md-3 brand-grid">
+						<img src="../../assets/images/ic2.png" class="img-responsive" alt="">
+					</div>
+					<div class="col-md-3 brand-grid">
+						<img src="../../assets/images/ic3.png" class="img-responsive" alt="">
+					</div>
+					<div class="clearfix"></div>
+				</div>
+				</div>-->
+				<!--//brand-->
+			</div>
+
+<br><br>
+  <app-footer></app-footer>
+
+

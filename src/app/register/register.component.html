@@ -18,23 +18,12 @@
         <i  class="glyphicon glyphicon-user"></i>
       </div>
       <div class="login-mail">
-          <input type="password" placeholder="gender" required="" name="pw"  [(ngModel)]="password">
+          <input type="password" placeholder="Password" required="" name="pw"  [(ngModel)]="password">
           <i class="glyphicon glyphicon-lock"></i>
-        </div>
+        </div>   
         <div class="login-mail">
-            <input type="file" placeholder="image" required="" name="pw"  [(ngModel)]="password">
-        
-          </div>
-          <div class="login-mail">
-              <input type="text" placeholder="mobile no" required="" name="pw"  [(ngModel)]="password">
-              <i class="glyphicon glyphicon-lock"></i>
-            </div>
-      
-        <input type="textarea" placeholder="address" required="" name="number" [(ngModel)]="mob">
-        <i  class="glyphicon glyphicon-phone"></i>
-   
-      
-        
+          <input type="password" placeholder="Mobile Number" required="" name="mobile"  [(ngModel)]="mobile">
+        </div>      
       <label class="hvr-skew-backward">
         <input type="submit" value="Submit" (click)="signUp()">
       </label>

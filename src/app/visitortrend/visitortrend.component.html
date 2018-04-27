@@ -1,7 +1,7 @@
-<app-header></app-header>
+<app-newheader></app-newheader>
 
-<div class="container">
-<!--  <div class="container">
+<div class="banner">
+  <div class="container">
   <section class="rw-wrapper">
           <h1 class="rw-sentence">
             <span>Fashion &amp; Beauty</span>
@@ -24,18 +24,18 @@
           </h1>
         </section>
         </div>
-  </div>-->
+  </div>
     <!--content-->
-     <!-- <div class="content" >
+      <div class="content" >
         <div class="container">
           <div class="content-top">
             <div class="col-md-6 col-md">
               <div class="col-1">
                <a href="single.html" class="b-link-stroke b-animate-go  thickbox">
          <img src="./assets/images/brideghroom.png" class="img-responsive" alt=""/><div class="b-wrapper1 long-img"><p class="b-animate b-from-right    b-delay03 ">Ghroom &amp; Bride</p><label class="b-animate b-from-right    b-delay03 "></label><h3 class="b-animate b-from-left    b-delay03 ">Trendy</h3></div></a>
-               -->
+
                 <!---<a href="single.html"><img src="images/pi.jpg" class="img-responsive" alt=""></a>-->
-              <!--</div>
+              </div>
               <div class="col-2">
                 <span>Hot Deal</span>
                 <h2><a href="single.html">Luxurious &amp; Trendy</a></h2>
@@ -62,24 +62,23 @@
               </div>
              </div>
             <div class="clearfix"></div>
-          </div>-->
+          </div>
           <!--products-->
         <div class="content-mid">
           <h3>Trending Items</h3>
           <label class="line"></label>
           <div class="mid-popular"  >
-            <div class="col-md-3 item-grid simpleCart_shelfItem" *ngFor="let item of product" >
+            <div class="col-md-3 item-grid simpleCart_shelfItem" *ngFor="let item of tre" >
             <div class=" mid-pop" >
             <div class="pro-img" >
-              <img src={{item.pro_img1}} (click)="getId(item)" class="img-responsive" alt="">
+              <img src={{item.pro_timg1}} class="img-responsive" alt="">
               
               </div>
               <div class="mid-1">
               <div class="women">
               <div class="women-top">
-                <span>{{item.cat_name}}</span>
-               
-                <h6><a class="trim-info" (click)="getId(item)" >{{item.pro_name}}</a></h6>
+                <span>{{item.tcat_name}}</span>
+                <h6><a class="trim-info">{{item.pro_tname}}</a></h6>
                 </div>
                 <!--<div class="img item_add">
                   <br><a (click)="addtocart()"><img src="./assets/images/ca.png" alt=""></a>
@@ -89,23 +88,27 @@
                 <div class="clearfix"></div>
                 </div>
                 <div class="mid-2">
-                  <p ><label>$100.00</label><em class="item_price">{{item.pro_price | currency:'INR'}}</em></p>
+                  <p ><label>$100.00</label><em class="item_price">{{item.pro_tprice | currency:'INR'}}</em></p>
                     <div class="block">
                     <div class="starbox small ghosting"> </div>
                   </div>
-
                   <div class="clearfix"></div>
                 </div>
-
+                
               </div>
             </div>
-
+           
             </div>
+            
            
         </div>
+        
         </div>
-
+        
       </div>
+      <div align="right">
+          <a routerLink="/visitorhome" class="hvr-skew-backward">View more</a>
+          </div>
     <br>
     <app-footer></app-footer>
 

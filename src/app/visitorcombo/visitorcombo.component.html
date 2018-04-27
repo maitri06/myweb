@@ -1,0 +1,42 @@
+<app-newheader></app-newheader>
+<div class="banner-top">
+  <div class="container">
+    <h1>Combos</h1>
+    <em></em>
+  </div>
+</div>
+<br> 
+<div class="content-mid">
+  <h3>Latest Combos</h3>
+  <label class="line"></label>
+</div>
+
+<div class="mid-popular"  >
+  <div class="single">
+ 
+    <div class="container">
+    <div class="col-md-12" *ngFor="let item of combo">
+        <div class="col-md-3 grid" >		
+        <div class="pro-img" >
+             <img src="{{item.combo_img1}} " (click)="getalert()"  class="img-responsive" alt="">
+           <br> </div>
+            </div>
+            <div class="col-md-7 grid">		
+                <h3><a (click)="getalert()"  >{{item.combo_name}}</a></h3>
+                 
+                <div class="price_single">
+                  <span class="reducedfrom item_price">{{item.combo_price| currency:'INR'}}</span>
+                 <div class="clearfix"></div>
+                </div>
+              </div>
+              <div class="col-md-2 grid">	<br><br>
+                  <a class=" hvr-skew-backward" (click)="getalert()" >View Combo</a><br><br>
+                </div>	
+ </div>
+ </div>
+ </div>   
+</div>
+<label class="line"></label>
+
+<br>
+<app-footer></app-footer>

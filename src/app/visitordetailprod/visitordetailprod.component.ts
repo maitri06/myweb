@@ -19,6 +19,9 @@ export class VisitordetailprodComponent implements OnInit {
   desci: string;
   email: string;
   qty: number;
+  img1:string;
+img2:string;
+img3:string;
 
   constructor(public _data: HomedataService, public dat: CartdataService, public _r: Router, public _activerouter: ActivatedRoute) { }
 
@@ -28,7 +31,7 @@ export class VisitordetailprodComponent implements OnInit {
         this.id = para["p_id"];
         console.log(this.id);
 
-
+ 
         this._data.getProductId(this.id).subscribe(
           (data: any) => {
             // localStorage.setItem('product_id',this.id);
@@ -37,6 +40,11 @@ export class VisitordetailprodComponent implements OnInit {
             this.price = data[0].pro_price;
             console.log(this.price);
             this.desci = data[0].pro_desci;
+            this.img1=data[0].pro_img1;
+            this.img2=data[0].pro_img2;
+            this.img3=data[0].pro_img3;
+
+
           }
         );
 

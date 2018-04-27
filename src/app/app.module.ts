@@ -54,6 +54,9 @@ import { MyorderComponent } from './myorder/myorder.component';
 import { DetailcomboComponent } from './detailcombo/detailcombo.component';
 import { TrendComponent } from './trend/trend.component';
 import { DetailtproductComponent } from './detailtproduct/detailtproduct.component';
+import { VisitortrendComponent } from './visitortrend/visitortrend.component';
+import { VisitorcomboComponent } from './visitorcombo/visitorcombo.component';
+import { VisitorcombodetailComponent } from './visitorcombodetail/visitorcombodetail.component';
 
 @NgModule({
   declarations: [
@@ -84,7 +87,10 @@ import { DetailtproductComponent } from './detailtproduct/detailtproduct.compone
     VisitorprobrandComponent,
     DetailcomboComponent,
     TrendComponent,
-    DetailtproductComponent
+    DetailtproductComponent,
+    VisitortrendComponent,
+    VisitorcomboComponent,
+    VisitorcombodetailComponent
   ],
   imports: [
     BrowserModule,

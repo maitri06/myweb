@@ -24,10 +24,16 @@ import { VisitorhomeComponent } from './visitorhome/visitorhome.component';
 import { VisitordetailprodComponent } from './visitordetailprod/visitordetailprod.component';
 import { VisitorpriceoneComponent } from './visitorpriceone/visitorpriceone.component';
 import { VisitorprobrandComponent } from './visitorprobrand/visitorprobrand.component';
+import { VisitortrendComponent } from './visitortrend/visitortrend.component';
+import { VisitorcomboComponent } from './visitorcombo/visitorcombo.component';
+import { VisitorcombodetailComponent } from './visitorcombodetail/visitorcombodetail.component';
 
 const router:Routes=[
-  { path: '', redirectTo: '/visitorhome', pathMatch: 'full' },
+  { path: '', redirectTo: '/visitortrend', pathMatch: 'full' },
+  {path:'visitortrend',component:VisitortrendComponent},
   { path: 'visitorhome', component: VisitorhomeComponent },
+  {path:'visitorcombo',component:VisitorcomboComponent},
+{path:'visitorcombodetail/p_id',component:VisitorcombodetailComponent},
   { path: 'visitordetailprod/:p_id', component: VisitordetailprodComponent },
   {path:'home',component:HomeComponent},
     {path:'aboutus',component:AboutusComponent},
