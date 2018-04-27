@@ -13,16 +13,16 @@
 
 <div class="mid-popular"  >
   <div class="single">
-
+ 
     <div class="container">
     <div class="col-md-12" *ngFor="let item of combo">
         <div class="col-md-3 grid" >		
         <div class="pro-img" >
-            <img src="{{item.combo_img1}} "  class="img-responsive" alt="">
-            </div>
+             <img src="{{item.combo_img1}} " (click)="getComboid(item)"  class="img-responsive" alt="">
+           <br> </div>
             </div>
             <div class="col-md-7 grid">		
-                <h3><a  >{{item.combo_name}}</a></h3>
+                <h3><a (click)="getComboid(item)" >{{item.combo_name}}</a></h3>
                  
                 <div class="price_single">
                   <span class="reducedfrom item_price">{{item.combo_price| currency:'INR'}}</span>
@@ -30,8 +30,8 @@
                 </div>
               </div>
               <div class="col-md-2 grid">	<br><br>
-                  <a class=" hvr-skew-backward" (click)="getid(item)">View Combo</a><br><br>
-                  <a routerLink='/payment' class=" hvr-skew-backward">Proceed to Buy</a>
+                  <a class=" hvr-skew-backward" (click)="getComboid(item)">View Combo</a><br><br>
+                  <a routerLink='/contactus' class=" hvr-skew-backward">Contact Us</a>
                 </div>	
  </div>
  </div>

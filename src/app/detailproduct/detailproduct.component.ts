@@ -5,7 +5,7 @@ import { HomedataService } from "../homedata.service";
 import {product} from "../home/productmodel";
 import { cart } from "../cart/cartmodel";
 import { CartdataService } from "../cartdata.service";
-
+ 
 @Component({
   selector: 'app-detailproduct',
   templateUrl: './detailproduct.component.html',
@@ -24,7 +24,6 @@ img2:string;
 img3:string;
 product: product[]= [];
 cart_cnt:string="1";
-
 
   constructor(public _data:HomedataService,public dat:CartdataService,public _r:Router,public _activerouter:ActivatedRoute) { }
 
@@ -59,8 +58,8 @@ cart_cnt:string="1";
 
       }
     )
-  }
 
+  }
   addtocart()
   {
     this.email=localStorage.getItem('Email');
@@ -74,7 +73,7 @@ cart_cnt:string="1";
       }
     )
   }
-
+ 
   price1()
   {
 

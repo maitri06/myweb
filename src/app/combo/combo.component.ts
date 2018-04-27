@@ -22,7 +22,7 @@ export class ComboComponent implements OnInit {
     )
   }
 
-  getid(item)
+  getComboid(item)
   {
    this._router.navigate(["/detailcombo",item.pk_combo_id]);
    

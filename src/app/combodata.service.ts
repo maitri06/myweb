@@ -13,4 +13,5 @@ export class CombodataService {
   {
     return this._http.get<product>(this.url+id);
   }
+  
 } 

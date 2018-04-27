@@ -15,6 +15,10 @@ import { BillComponent } from './bill/bill.component';
 import {PriceoneComponent  } from './priceone/priceone.component';
 import {ProbrandComponent  } from './probrand/probrand.component';
 import {MyorderComponent  } from './myorder/myorder.component';
+import { DetailcomboComponent } from './detailcombo/detailcombo.component';
+import { DetailtproductComponent } from './detailtproduct/detailtproduct.component';
+
+import { TrendComponent } from './trend/trend.component';
 
 import { VisitorhomeComponent } from './visitorhome/visitorhome.component';
 import { VisitordetailprodComponent } from './visitordetailprod/visitordetailprod.component';
@@ -43,7 +47,10 @@ const router:Routes=[
     {path:'probrand/:p_brand',component:ProbrandComponent},
     {path:'myorder',component:MyorderComponent},
     {path:'visitorpriceone',component:VisitorpriceoneComponent},
-    {path:'visitorprobrand',component:VisitorprobrandComponent}
+    {path:'visitorprobrand',component:VisitorprobrandComponent},
+    {path:'detailcombo/:p_id',component:DetailcomboComponent},
+    {path:'trend',component:TrendComponent},
+    {path:'detailtproduct/:t_id',component:DetailproductComponent}
 
 ];
 

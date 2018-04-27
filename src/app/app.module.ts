@@ -15,6 +15,7 @@ import {  UserdataService} from "./userdata.service";
 import { EmaildataService } from "./emaildata.service";
 import { BilldataService } from "./billdata.service";
 import { CombodataService } from "./combodata.service";
+import { TrenddataService } from "./trenddata.service";
 
 
 import { AppComponent } from './app.component';
@@ -50,6 +51,9 @@ MatPaginatorModule
 } from '@angular/material';
 import { ProbrandComponent } from './probrand/probrand.component';
 import { MyorderComponent } from './myorder/myorder.component';
+import { DetailcomboComponent } from './detailcombo/detailcombo.component';
+import { TrendComponent } from './trend/trend.component';
+import { DetailtproductComponent } from './detailtproduct/detailtproduct.component';
 
 @NgModule({
   declarations: [
@@ -77,7 +81,10 @@ import { MyorderComponent } from './myorder/myorder.component';
     ProbrandComponent,
     MyorderComponent,
     VisitorpriceoneComponent,
-    VisitorprobrandComponent
+    VisitorprobrandComponent,
+    DetailcomboComponent,
+    TrendComponent,
+    DetailtproductComponent
   ],
   imports: [
     BrowserModule,
@@ -92,7 +99,7 @@ import { MyorderComponent } from './myorder/myorder.component';
     MatPaginatorModule,
     IconModule
   ],
-  providers: [HomedataService,CombodataService,LogindataService,RegisterdataService,CartdataService,BilldataService,EmaildataService,UserdataService],
+  providers: [HomedataService,TrenddataService,CombodataService,LogindataService,RegisterdataService,CartdataService,BilldataService,EmaildataService,UserdataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

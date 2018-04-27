@@ -60,7 +60,7 @@ export class LoginComponent implements OnInit {
           localStorage.setItem('Name',data[0].u_name);
           this.cnt=1;
           localStorage.setItem('Cnt',this.cnt.toString());
-          this._router.navigate(['/home']);
+          this._router.navigate(['/trend']);
         }
         else{
           alert("na thayu");

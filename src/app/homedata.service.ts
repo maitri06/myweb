@@ -3,6 +3,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { product } from './home/productmodel';
 
 
+
 @Injectable()
 export class HomedataService {
   public url: string = "http://localhost:3000/product/";
@@ -13,8 +14,9 @@ export class HomedataService {
   public url5: string = "http://localhost:3000/proprice4/";
   public url6: string = "http://localhost:3000/proprice5/";
   public url7: string = "http://localhost:3000/probrand/";
+  
 
-
+ 
 
   constructor(public _http: HttpClient) { }
   getAllProduct() {
@@ -53,4 +55,5 @@ export class HomedataService {
   {
     return this._http.get(this.url6);
   }
+ 
 }

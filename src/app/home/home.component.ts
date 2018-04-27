@@ -4,6 +4,7 @@ import { product } from './productmodel';
 import { Router } from '@angular/router';
 import { product_cat } from "./product_cat_model";
 
+ 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -15,7 +16,7 @@ export class HomeComponent implements OnInit {
   constructor(public _data: HomedataService, public _router: Router) { }
 
   ngOnInit() {
-    this.email=localStorage.getItem('Email');
+    //this.email=localStorage.getItem('Email');
     this._data.getProductAndCat().subscribe(
       (data: any) => { this.product = data; },
       function (e) { alert(e); },

@@ -14,13 +14,13 @@
           <div class="col-md-5 grid">
             <div class="flexslider">
                 <ul class="slides">
-                <li data-thumb="./assets/images/im1.jpg">
+                <li data-thumb>
                   <div class="thumb-image"> <img src="{{img1}}" data-imagezoom="true" class="img-responsive"> </div>
                 </li>
-                <li data-thumb="./assets/images/si1.jpg">
+                <li data-thumb>
                    <div class="thumb-image"> <img src="{{img2}}" data-imagezoom="true" class="img-responsive"> </div>
                 </li>
-                <li data-thumb="./assets/images/si2.jpg">
+                <li data-thumb>
                    <div class="thumb-image"> <img src="{{img3}}" data-imagezoom="true" class="img-responsive"> </div>
                 </li>
                 </ul>
@@ -33,7 +33,7 @@
                 <p class="in-para">{{desci}}</p>
                 <div class="price_single">
                   <span class="reducedfrom item_price">{{price| currency:'INR'}}</span><br>
-                </div>
+                </div> 
                  <div class="quantity">
                         <div class="quantity-select"> Quantity-select
                             <select [(ngModel)]="qty" value="Select Category"  name="sel">

@@ -64,8 +64,12 @@ public oid:string;
       this._data2.getBillByEmail(this.email).subscribe(
 
         (data2:any)=>{this.bill1=data2;
+          console.log("bill");
         console.log(data2);
         this.oid=data2[(data2.length)-1].pk_bill_id;
+        console.log("oid");
+        console.log(this.oid);
+
         this.date=data2[0].bill_date;
         this.type=data2[0].bill_type;
         },
