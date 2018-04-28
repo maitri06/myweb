@@ -11,18 +11,20 @@ import { Router } from "@angular/router";
 export class RegisterComponent implements OnInit {
 
   constructor(public _data:RegisterdataService,public _router:Router) { }
-
+  email:string="";
+  password:string="";
+  name:string="";
+  mobile:string="";
+  gender:string="";
+  address:string="";
+  public user:user[]=[];
   ngOnInit() {
   }
-  email:string="";
-password:string="";
-name:string="";
-mobile:string="";
-public user:user[]=[];
+  
 
 signUp()
   {
-    let item=new user(this.email,this.password,this.name,'','',this.mobile,'','user');
+    let item=new user(this.email,this.password,this.name,this.gender,'',this.mobile,this.address,'user');
     this._data.addUser(item).subscribe(
       (data:any)=>{
         console.log(data);

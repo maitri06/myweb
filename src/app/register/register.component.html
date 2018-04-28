@@ -22,12 +22,18 @@
           <i class="glyphicon glyphicon-lock"></i>
         </div>   
         <div class="login-mail">
-          <input type="password" placeholder="Mobile Number" required="" name="mobile"  [(ngModel)]="mobile">
-        </div>      
+          <input type="radio"  required="" name="gender"  value="male" [(ngModel)]="gender"> Male 
+          <input type="radio"  required="" name="gender" value="fenale" [(ngModel)]="gender"> Female
+        </div>  
+        <div class="login-mail">
+          <input type="text" placeholder="Mobile Number" required="" name="mobile"  [(ngModel)]="mobile">
+        </div>
+         <div class="login-mail">
+          <input type="text" placeholder="Address" required="" name="address"  [(ngModel)]="address">
+        </div>    
       <label class="hvr-skew-backward">
         <input type="submit" value="Submit" (click)="signUp()">
       </label>
-    
     </div>
     <div class="col-md-6 login-right">
        <h3>Completely Free Account</h3>
