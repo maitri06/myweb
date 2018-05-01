@@ -1,4 +1,4 @@
-<app-header></app-header>
+<!-- <app-header></app-header>
 <div class="banner-top">
 	<div class="container">
 		<h1>Register</h1>
@@ -20,30 +20,107 @@
       <div class="login-mail">
           <input type="password" placeholder="Password" required="" name="pw"  [(ngModel)]="password">
           <i class="glyphicon glyphicon-lock"></i>
-        </div>   
+        </div>
         <div class="login-mail">
-          <input type="radio"  required="" name="gender"  value="male" [(ngModel)]="gender"> Male 
+          <input type="radio"  required="" name="gender"  value="male" [(ngModel)]="gender"> Male
           <input type="radio"  required="" name="gender" value="fenale" [(ngModel)]="gender"> Female
-        </div>  
+        </div>
         <div class="login-mail">
-          <input type="text" placeholder="Mobile Number" required="" name="mobile"  [(ngModel)]="mobile">
+          <input type="text" placeholder="Mobile Number" required="" name="number"  [(ngModel)]="number">
         </div>
          <div class="login-mail">
           <input type="text" placeholder="Address" required="" name="address"  [(ngModel)]="address">
-        </div>    
+        </div>
       <label class="hvr-skew-backward">
         <input type="submit" value="Submit" (click)="signUp()">
       </label>
     </div>
     <div class="col-md-6 login-right">
        <h3>Completely Free Account</h3>
-       
-       <p>Pellentesque neque leo, dictum sit amet accumsan non, dignissim ac mauris. Mauris rhoncus, lectus tincidunt tempus aliquam, odio 
+
+       <p>Pellentesque neque leo, dictum sit amet accumsan non, dignissim ac mauris. Mauris rhoncus, lectus tincidunt tempus aliquam, odio
        libero tincidunt metus, sed euismod elit enim ut mi. Nulla porttitor et dolor sed condimentum. Praesent porttitor lorem dui, in pulvinar enim rhoncus vitae. Curabitur tincidunt, turpis ac lobortis hendrerit, ex elit vestibulum est, at faucibus erat ligula non neque.</p>
       <a routerLink="/login" class="hvr-skew-backward">Login</a>
 
     </div>
-    
+
+    <div class="clearfix"> </div>
+    </form>
+  </div>
+
+</div>
+<br>
+
+<app-footer></app-footer> -->
+ <app-header></app-header>
+<div class="banner-top">
+	<div class="container">
+		<h1>Register</h1>
+		<em></em>
+	</div>
+</div>
+<div class="container">
+  <div class="login">
+ <form (ngSubmit)="signUp()" #addform="ngForm" >
+    <div class="col-md-6 login-do">
+        <div class="login-mail">
+          <mat-form-field hintLabel="eg.a@gmail.com" class="example-full-width">
+            <input
+            matInput
+            ngModel
+            required
+            email
+            [(ngModel)]="email"
+            name="inpemail"
+             type="email"
+
+             #inpemail="ngModel">
+             <mat-error *ngIf="inpemail.hasError('required')" >Email must Require</mat-error>
+             <mat-error *ngIf="!inpemail.hasError('required')" >Wrong Email Address</mat-error>
+
+
+          </mat-form-field> </div>
+    <div class="login-mail">
+      <mat-form-field  class="example-full-width">
+        <input
+        matInput
+        ngModel
+        required
+        minlength="6"
+        name="inpPass"
+        [(ngModel)]="password"
+         type="password"
+
+         #inpPass="ngModel">
+         <!--<i class="glyphicon glyphicon-lock"></i>-->
+         <mat-error *ngIf="inpPass.hasError('required')"  >Password must Require!</mat-error>
+        <mat-hint align="end"> {{inpPass.value?.length}}/7 </mat-hint>
+      </mat-form-field> </div>
+
+        <div class="login-mail">
+          <input type="radio"  required="" name="gender"  value="male" [(ngModel)]="gender"> Male
+          <input type="radio"  required="" name="gender" value="fenale" [(ngModel)]="gender"> Female
+        </div>
+        <div class="login-mail">
+            <input type="text" placeholder="Number" required="" name="number"  [(ngModel)]="number">
+
+              </div>
+         <div class="login-mail">
+          <input type="text" placeholder="Address" required="" name="address"  [(ngModel)]="address">
+        </div>
+      <label class="hvr-skew-backward">
+        <input type="submit" value="Submit" (click)="signUp()">
+      </label>
+    </div>
+    <div class="col-md-6 login-right">
+       <h3>Completely Free Account</h3>
+
+       <p>Pellentesque neque leo, dictum sit amet accumsan non, dignissim ac mauris. Mauris rhoncus, lectus tincidunt tempus aliquam, odio
+       libero tincidunt metus, sed euismod elit enim ut mi. Nulla porttitor et dolor sed condimentum. Praesent porttitor lorem dui, in pulvinar enim rhoncus vitae. Curabitur tincidunt, turpis ac lobortis hendrerit, ex elit vestibulum est, at faucibus erat ligula non neque.</p>
+      <a routerLink="/login" class="hvr-skew-backward">Login</a>
+
+    </div>
+
     <div class="clearfix"> </div>
     </form>
   </div>

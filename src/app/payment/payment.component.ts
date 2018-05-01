@@ -6,6 +6,10 @@ import { CartdataService } from '../cartdata.service';
 import { procart } from '../cart/procartmodel';
 import { user } from '../user/usermodel';
 import { bill } from '../bill/billmodel';
+import { EmaildataService } from '../emaildata.service';
+import { Forget } from '../forget/forgetmodel';
+
+
 
 
 @Component({
@@ -22,7 +26,10 @@ export class PaymentComponent implements OnInit {
   i: number;
   sum:number=0;
   dat:Date;
-  constructor(public _data:CartdataService,public _r:Router,public _activerouter:ActivatedRoute,public _dat:BilldataService) { }
+  public msg:string;
+
+  constructor(public _data:CartdataService,public _r:Router, public _email: EmaildataService
+    ,public _activerouter:ActivatedRoute,public _dat:BilldataService) { }
 
   ngOnInit() {
     this.dat=new Date();
@@ -48,13 +55,24 @@ export class PaymentComponent implements OnInit {
  }
  onClick()
 {
-  let item=new bill(null,'Credit Card',this.sum,'7/4',this.email,6);
+  let item=new bill(null,'Credit Card',this.sum,this.dat.toString(),this.email,6);
     this._dat.addBill(item).subscribe(
       (data:any)=>{
         console.log(data);
         this._r.navigate(['/bill']);
       }
     )
+
+    var msg = this.email+ '  Your Order Amount is Rs   '+this.sum+'   Thank You for shopping !!!';
+
+  this._email.sendMail(new Forget(msg, this.email,'Order details!!! ')).subscribe(
+    (data: any) => {
+
+      console.log('msg sent');
+      alert('msg sent');
+     // this._router.navigate(['/home']);
+    }
+  );
   console.log();
   this._r.navigate(['/bill']);
  }

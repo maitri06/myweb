@@ -14,17 +14,17 @@ export class RegisterComponent implements OnInit {
   email:string="";
   password:string="";
   name:string="";
-  mobile:string="";
+  number:string="";
   gender:string="";
   address:string="";
   public user:user[]=[];
   ngOnInit() {
   }
-  
+
 
 signUp()
   {
-    let item=new user(this.email,this.password,this.name,this.gender,'',this.mobile,this.address,'user');
+    let item=new user(this.email,this.password,this.name,this.gender,'',this.number,this.address,'user');
     this._data.addUser(item).subscribe(
       (data:any)=>{
         console.log(data);

@@ -71,18 +71,18 @@
             <div class="col-md-3 item-grid simpleCart_shelfItem" *ngFor="let item of tre" >
             <div class=" mid-pop" >
             <div class="pro-img" >
-              <img src={{item.pro_timg1}} class="img-responsive" alt="">
-              
+              <img src={{item.pro_timg1}} class="img-responsive" alt="" (click)="getId(item)" >
+
               </div>
               <div class="mid-1">
               <div class="women">
               <div class="women-top">
                 <span>{{item.tcat_name}}</span>
-                <h6><a class="trim-info">{{item.pro_tname}}</a></h6>
+                <h6><a class="trim-info" (click)="getId(item)" >{{item.pro_tname}}</a></h6>
                 </div>
                 <!--<div class="img item_add">
                   <br><a (click)="addtocart()"><img src="./assets/images/ca.png" alt=""></a>
-                 
+
                   <a routerLink='/order' class=" hvr-skew-backward">Proceed to Buy</a><br><br>
                 </div>-->
                 <div class="clearfix"></div>
@@ -94,17 +94,17 @@
                   </div>
                   <div class="clearfix"></div>
                 </div>
-                
+
               </div>
             </div>
-           
+
             </div>
-            
-           
+
+
         </div>
-        
+
         </div>
-        
+
       </div>
       <div align="right">
           <a routerLink="/home" class="hvr-skew-backward">View more</a>

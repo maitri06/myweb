@@ -3,7 +3,7 @@ import { TrenddataService } from '../trenddata.service';
 import { tre } from './trendmodel';
 import { Router } from '@angular/router';
 import { product_cat } from "../home/product_cat_model";
- 
+
 
 @Component({
   selector: 'app-trend',
